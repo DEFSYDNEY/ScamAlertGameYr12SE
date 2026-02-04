@@ -2,18 +2,35 @@
 
 [ext_resource type="Texture2D" uid="uid://b6kkb51fe724s" path="res://icon.svg" id="1_7t06c"]
 [ext_resource type="Script" uid="uid://tfwnaofav0i3" path="res://Scripts/Levels/GameManager.gd" id="1_b07c4"]
+[ext_resource type="Script" uid="uid://cbcx02yt7ppig" path="res://Scripts/apps/phone.gd" id="2_db73o"]
 [ext_resource type="Script" uid="uid://cjh4x4ky1rjfp" path="res://Scripts/Scams/scam_manager.gd" id="3_2ytpj"]
 
 [node name="Test_Level" type="Node2D" unique_id=451037741]
 
 [node name="PhoneScreen" type="Sprite2D" parent="." unique_id=1045452037]
+modulate = Color(18.892157, 18.892157, 18.892157, 1)
+position = Vector2(198.5, 299.5)
+scale = Vector2(3.0859375, 4.6796875)
 texture = ExtResource("1_7t06c")
 
 [node name="Control" type="Control" parent="PhoneScreen" unique_id=1027103868]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -64.32405
+offset_top = -64.00001
+offset_right = 65.620255
+offset_bottom = 62.942154
+script = ExtResource("2_db73o")
+
+[node name="Messages App" type="TextureButton" parent="PhoneScreen/Control" unique_id=504105975]
+modulate = Color(0.062487274, 0.062487274, 0.062487274, 1)
+layout_mode = 0
+offset_left = 11.989868
+offset_top = 94.878136
+offset_right = 139.98988
+offset_bottom = 222.87814
+scale = Vector2(0.27264866, 0.18684815)
+texture_normal = ExtResource("1_7t06c")
 
 [node name="ScamManager" type="Node" parent="." unique_id=513791489]
 script = ExtResource("3_2ytpj")
@@ -22,3 +39,5 @@ script = ExtResource("3_2ytpj")
 
 [node name="GameManager" type="Node" parent="." unique_id=1642830191]
 script = ExtResource("1_b07c4")
+
+[connection signal="pressed" from="PhoneScreen/Control/Messages App" to="PhoneScreen/Control" method="_on_messages_app_pressed"]

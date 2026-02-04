@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ScamData" format=3 uid="uid://cet8oro2ndpgk"]
+
+[ext_resource type="Script" uid="uid://dlamp2m0jmwvb" path="res://Resources/scam_data.gd" id="1_w5cyk"]
+
+[resource]
+script = ExtResource("1_w5cyk")
+scam_id = "3"
+scam_type = "Fake Mail"
+app_type = "messages"
+content = "Your aus post was cancelled, click this link"
+sender_name = "Aus Posts"
+red_flags = Array[String](["Deciet"])
+explanation = "Lying about being aus post to steal your info"
+metadata/_custom_type_script = "uid://dlamp2m0jmwvb"

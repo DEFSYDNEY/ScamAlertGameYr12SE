@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ScamData" format=3 uid="uid://buao0pgo7bb8l"]
+
+[ext_resource type="Script" uid="uid://dlamp2m0jmwvb" path="res://Resources/scam_data.gd" id="1_yrq3n"]
+
+[resource]
+script = ExtResource("1_yrq3n")
+scam_id = "2"
+scam_type = "Gibberish"
+app_type = "messages"
+content = "4 gre 214 grd56 sd32 rdefs"
+sender_name = "Timothy"
+red_flags = Array[String](["Gibberish"])
+explanation = "gibberish"
+metadata/_custom_type_script = "uid://dlamp2m0jmwvb"

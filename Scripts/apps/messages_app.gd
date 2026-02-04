@@ -1,6 +1,5 @@
-extends Node2D
+extends Control
 
-@onready var scam_manager = $ScamManager
 @onready var message_label = $MessageContent
 @onready var sender_contact = $Contact
 @onready var scam_button = $ScamButton
@@ -10,9 +9,12 @@ var current_scam: ScamData
 
 func _ready():
 	load_message()
+	
+	scam_button.visible = true
+	legit_button.visible = true
 
 func load_message():
-	current_scam = scam_manager.get_random_scam("messages")
+	current_scam = ScamManager.get_random_scam("messages")
 	sender_contact.text = current_scam.sender_name
 	message_label.text = current_scam.content
 
@@ -27,4 +29,6 @@ func check_answer(player_said_scam: bool):
 		print("Correct")
 	else:
 		print("Bubbah")
-	pass
+	
+	scam_button.visible = false
+	legit_button.visible = false

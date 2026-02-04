@@ -10,6 +10,9 @@ func _ready():
 
 func load_scams():
 	all_scams.append(preload("res://Resources/Scams/test_scam.tres"))
+	all_scams.append(preload("res://Resources/Scams/test_scam2.tres"))
+	all_scams.append(preload("res://Resources/Scams/test_scam3.tres"))
+	
 	# Add more scams here as you create them
 	# all_scams.append(preload("res://Resources/Scams/phishing_1.tres"))
 

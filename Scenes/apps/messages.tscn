@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dl4ty3xysygx0"]
 
 [ext_resource type="Script" uid="uid://b6mnuc27qofuk" path="res://Scripts/apps/messages_app.gd" id="1_2mom3"]
+[ext_resource type="Texture2D" uid="uid://b6kkb51fe724s" path="res://icon.svg" id="2_qcdrd"]
 
 [node name="Messages" type="Node2D" unique_id=1306950354]
 
@@ -13,20 +14,35 @@ script = ExtResource("1_2mom3")
 
 [node name="MessageContent" type="Label" parent="Control" unique_id=478110405]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 69.0
+offset_top = 213.0
+offset_right = 109.0
+offset_bottom = 236.0
 
 [node name="Contact" type="Label" parent="Control" unique_id=1719297143]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 167.0
+offset_top = 15.0
+offset_right = 207.0
+offset_bottom = 38.0
 
-[node name="TextureButton" type="TextureButton" parent="Control" unique_id=1424825673]
+[node name="ScamButton" type="TextureButton" parent="Control" unique_id=1424825673]
+modulate = Color(18.892157, 0, 0, 1)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 24.0
+offset_top = 461.0
+offset_right = 152.0
+offset_bottom = 589.0
+texture_normal = ExtResource("2_qcdrd")
 
-[node name="TextureButton2" type="TextureButton" parent="Control" unique_id=1192064640]
+[node name="LegitButton" type="TextureButton" parent="Control" unique_id=1192064640]
+modulate = Color(0, 18.892157, 0, 1)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 247.0
+offset_top = 458.0
+offset_right = 375.0
+offset_bottom = 586.0
+texture_normal = ExtResource("2_qcdrd")
+
+[connection signal="pressed" from="Control/ScamButton" to="Control" method="_on_scam_button_pressed"]
+[connection signal="pressed" from="Control/LegitButton" to="Control" method="_on_legit_button_pressed"]

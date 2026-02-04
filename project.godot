@@ -15,6 +15,10 @@ run/main_scene="uid://2boflhyhw0ju"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ScamManager="*uid://cjh4x4ky1rjfp"
+
 [display]
 
 window/size/viewport_width=400

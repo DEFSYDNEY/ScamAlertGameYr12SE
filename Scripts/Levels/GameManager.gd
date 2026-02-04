@@ -1,4 +1,4 @@
-extends Node2D
+extends Node
 
 var score: int = 0 # Tracking score for reward or winning the game
 var current_day: int = 1 # Roguelike system to make it engaging and fun
