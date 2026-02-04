@@ -1,8 +1,20 @@
 [gd_scene format=3 uid="uid://2boflhyhw0ju"]
 
 [ext_resource type="Texture2D" uid="uid://b6kkb51fe724s" path="res://icon.svg" id="1_7t06c"]
+[ext_resource type="Script" uid="uid://tfwnaofav0i3" path="res://Scripts/Levels/test_level.gd" id="1_b07c4"]
 
 [node name="Test_Level" type="Node2D" unique_id=451037741]
+script = ExtResource("1_b07c4")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1045452037]
+[node name="PhoneScreen" type="Sprite2D" parent="." unique_id=1045452037]
 texture = ExtResource("1_7t06c")
+
+[node name="Control" type="Control" parent="PhoneScreen" unique_id=1027103868]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ScamManager" type="Node" parent="." unique_id=513791489]
+
+[node name="AppManager" type="Node" parent="." unique_id=1875173776]
