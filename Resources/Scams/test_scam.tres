@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ScamData" format=3 uid="uid://lvywh8mrjdjo"]
+
+[ext_resource type="Script" uid="uid://dlamp2m0jmwvb" path="res://Resources/scam_data.gd" id="1_rdgb0"]
+
+[resource]
+script = ExtResource("1_rdgb0")
+scam_id = "1"
+scam_type = "Blackmail"
+app_type = "messages"
+content = "I will leak your search history"
+sender_name = "Bob Teal"
+red_flags = Array[String](["Blackmail"])
+explanation = "A blatant claim with no proof he has any of your information"
+metadata/_custom_type_script = "uid://dlamp2m0jmwvb"

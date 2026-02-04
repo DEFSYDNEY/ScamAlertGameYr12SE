@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dl4ty3xysygx0"]
+
+[ext_resource type="Script" uid="uid://b6mnuc27qofuk" path="res://Scripts/apps/messages_app.gd" id="1_2mom3"]
+
+[node name="Messages" type="Node2D" unique_id=1306950354]
+
+[node name="Control" type="Control" parent="." unique_id=1541176750]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_2mom3")
+
+[node name="MessageContent" type="Label" parent="Control" unique_id=478110405]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Contact" type="Label" parent="Control" unique_id=1719297143]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="TextureButton" type="TextureButton" parent="Control" unique_id=1424825673]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton2" type="TextureButton" parent="Control" unique_id=1192064640]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
