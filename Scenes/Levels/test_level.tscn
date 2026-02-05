@@ -32,6 +32,16 @@ offset_bottom = 222.87814
 scale = Vector2(0.27264866, 0.18684815)
 texture_normal = ExtResource("1_7t06c")
 
+[node name="Email App" type="TextureButton" parent="PhoneScreen/Control" unique_id=64102933]
+modulate = Color(0.062487274, 0.062487274, 0.062487274, 1)
+layout_mode = 0
+offset_left = 75.5038
+offset_top = 94.87814
+offset_right = 203.50381
+offset_bottom = 222.87814
+scale = Vector2(0.27264866, 0.18684815)
+texture_normal = ExtResource("1_7t06c")
+
 [node name="ScamManager" type="Node" parent="." unique_id=513791489]
 script = ExtResource("3_2ytpj")
 
@@ -41,3 +51,4 @@ script = ExtResource("3_2ytpj")
 script = ExtResource("1_b07c4")
 
 [connection signal="pressed" from="PhoneScreen/Control/Messages App" to="PhoneScreen/Control" method="_on_messages_app_pressed"]
+[connection signal="pressed" from="PhoneScreen/Control/Email App" to="PhoneScreen/Control" method="_on_messages_app_pressed"]
