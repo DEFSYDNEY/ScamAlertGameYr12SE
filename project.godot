@@ -23,7 +23,6 @@ ScamManager="*uid://cjh4x4ky1rjfp"
 
 window/size/viewport_width=400
 window/size/viewport_height=600
-window/size/mode=3
 window/stretch/mode="viewport"
 
 [file_customization]
@@ -42,7 +41,6 @@ folder_colors={
 
 [rendering]
 
-textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
