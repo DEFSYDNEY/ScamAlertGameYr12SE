@@ -13,6 +13,7 @@ offset_bottom = 40.0
 script = ExtResource("1_2mom3")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 [node name="MessageContent" type="Label" parent="Control" unique_id=478110405]
@@ -20,10 +21,15 @@ layout_mode = 0
 offset_left = 16.826088
 offset_top = 183.0
 =======
+=======
+>>>>>>> parent of a960072 (Added fonts)
 [node name="MessageContent" type="Label" parent="Control" unique_id=478110405]
 layout_mode = 0
 offset_left = 69.0
 offset_top = 213.0
+<<<<<<< HEAD
+>>>>>>> parent of a960072 (Added fonts)
+=======
 >>>>>>> parent of a960072 (Added fonts)
 offset_right = 109.0
 offset_bottom = 236.0
@@ -36,7 +42,10 @@ offset_right = 207.0
 offset_bottom = 38.0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of a960072 (Added fonts)
 =======
 >>>>>>> parent of a960072 (Added fonts)
 [node name="ScamButton" type="TextureButton" parent="Control" unique_id=1424825673]
