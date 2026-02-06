@@ -22,6 +22,23 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_2mom3")
 
+<<<<<<< Updated upstream
+=======
+[node name="MessageContent" type="Label" parent="Control" unique_id=478110405]
+layout_mode = 0
+offset_left = 16.826088
+offset_top = 183.0
+offset_right = 109.0
+offset_bottom = 236.0
+
+[node name="Contact" type="Label" parent="Control" unique_id=1719297143]
+layout_mode = 0
+offset_left = 167.0
+offset_top = 15.0
+offset_right = 207.0
+offset_bottom = 38.0
+
+>>>>>>> Stashed changes
 [node name="ScamButton" type="TextureButton" parent="Control" unique_id=1424825673]
 modulate = Color(18.892157, 0, 0, 1)
 layout_mode = 0

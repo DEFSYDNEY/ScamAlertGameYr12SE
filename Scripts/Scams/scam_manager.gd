@@ -13,7 +13,7 @@ func load_scams():
 	all_scams.append(preload("res://Resources/Scams/test_scam2.tres"))
 	all_scams.append(preload("res://Resources/Scams/test_scam3.tres"))
 	
-	# Add more scams here as you create them
+	# Add more scams
 	# all_scams.append(preload("res://Resources/Scams/phishing_1.tres"))
 
 func get_random_scam(app_type: String) -> ScamData:
